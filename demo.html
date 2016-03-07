@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" dir="ltr" lang="en-IN">
+<head>
+	<title>Simple Modal Plugin</title>
+</head>
+<body>
+
+<button class="adexmodal">Default Theme</button>
+<button class="adexmodalwarn">Warning Theme</button>
+<button class="adexmodalerror">Error Theme</button>
+<button class="adexmodalsuccess">Success Theme</button>
+<button class="adexmodalcustom">Custom Theme</button>
+
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="adexmodal.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.adexmodal').adexmodal({
+		
+		header : 'something',
+		mtype :'defult',
+		background : '#000',
+		bg_opacity : '60',  //Range it from 0 to 100
+		content : '<h1>Adex Modal plugin</h1><ul><li>It is integrated for html</li><li>Easy to use</li></ul>',
+		closebtn : 'close',
+		speed: 800,
+		});
+
+	$('.adexmodalcustom').adexmodal({
+		
+		header : 'something',
+		mtype :'default',
+		background : '#000',
+		bg_opacity : '60',  //Range it from 0 to 100
+		content : '<h1>Adex Modal plugin</h1><ul><li>It is integrated for html</li><li>Easy to use</li></ul>',
+		closebtn : 'close',
+		speed: 800,
+		customheader: 'purple'
+		});
+
+$('.adexmodalsuccess').adexmodal({
+		
+		header : 'something',
+		mtype :'success',
+		background : '#000',
+		bg_opacity : '60',  //Range it from 0 to 100
+		content : '<h1>Adex Modal plugin</h1><ul><li>It is integrated for html</li><li>Easy to use</li></ul>',
+		closebtn : 'close'
+		});
+
+$('.adexmodalerror').adexmodal({
+		
+		header : 'something',
+		mtype :'error',
+		background : '#000',
+		bg_opacity : '60',  //Range it from 0 to 100
+		content : '<h1>Adex Modal plugin</h1><ul><li>It is integrated for html</li><li>Easy to use</li></ul>',
+		closebtn : 'close'
+		});
+
+	$('.adexmodalwarn').adexmodal({
+		
+		header : 'something',
+		mtype :'warning',
+		background : '#000',
+		bg_opacity : '60',  //Range it from 0 to 100
+		content : '<h1>Adex Modal plugin</h1><ul><li>It is integrated for html</li><li>Easy to use</li></ul>',
+		closebtn : 'close'
+		});
+});
+</script>
+
+</body>
+</html>
