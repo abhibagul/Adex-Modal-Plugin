@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Simple Modal Plugin by abhibagul</title>
+    <title>Adex Modal Plugin by abhibagul</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,18 +11,70 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Simple Modal Plugin</h1>
-      <h2 class="project-tagline">Simple modal plugin is a jquery based modal plugin with flat ui interface and lots of customizable options.</h2>
-      <a href="https://github.com/abhibagul/SimpleModalPlugin" class="btn">View on GitHub</a>
-      <a href="https://github.com/abhibagul/SimpleModalPlugin/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/abhibagul/SimpleModalPlugin/tarball/master" class="btn">Download .tar.gz</a>
+      <h1 class="project-name">Adex Modal Plugin</h1>
+      <h2 class="project-tagline">It&#39;s loosing weight!</h2>
+      <a href="https://github.com/abhibagul/Adex-Modal-Plugin" class="btn">View on GitHub</a>
+      <a href="https://github.com/abhibagul/Adex-Modal-Plugin/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/abhibagul/Adex-Modal-Plugin/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <p>afterwards</p>
+      <h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>Tired of those fat! tedious!! and useless!!! scripts. Here <strong>ADEX MODAL Plugin</strong> has come to help you. We have reduced its size upto <strong>4KB!!</strong>. Not even that we have also tried to make it more easy to use. No need to access the html! Plugins are created to reduce the work. The plugin just requires you to provide jQuery from which it will automatically generate the HTML, css and jquery scripts for the related modals. All you need to do is just provide a element. A click on this element will show up the modal? Sounds hard?? It's Easy lets see how.</p>
+
+<h2>
+<a id="use-it-in-3-steps" class="anchor" href="#use-it-in-3-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Use it in 3 Steps!</h2>
+
+<h3>
+<a id="step-1--give-some-food-attach-the-js-to-page" class="anchor" href="#step-1--give-some-food-attach-the-js-to-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 1 : Give some food! (Attach the JS to page)</h3>
+
+<p>First of all we need to attach the resources file. The resources file the plugin requires is just a Jquery.js and adexmodal.js or adexmodal.min.js . Just attach both the plugins to the page.</p>
+
+<p><code>&lt;script type="text/javascript"  src="../jquery.min.js"&gt;&lt;/script&gt;</code><br>
+`</p>
+
+<p><strong>Note:</strong> Make sure jQuery is on top.</p>
+
+<h3>
+<a id="step-2--haha-it-works-put-jquery-code-to-apply-the-modal" class="anchor" href="#step-2--haha-it-works-put-jquery-code-to-apply-the-modal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 2 : HAHA It WORKS! (Put jquery code to apply the modal)</h3>
+
+<p>Now we have applied the jQuery and adexmodal to the page. Now we need to tell the plugin that when to display modal. That is which element shall user click to display the modal. Look on the following code i will explain each of the term.</p>
+
+<p>$(document).ready(function(){
+      $('elem').adexmodal({</p>
+
+<pre><code>    header : 'something',
+    mtype :'default',
+    background : '#000',
+    bg_opacity : '60',  //Range it from 0 to 100
+    content : '&lt;h1&gt;Adex Modal plugin&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;It is integrated for html&lt;/li&gt;&lt;li&gt;Easy to use&lt;/li&gt;&lt;/ul&gt;',
+    closebtn : 'close',
+    speed: 800,
+    customheader: 'purple'
+    });
+</code></pre>
+
+<p>});
+That's the whole code you need to create the modal. Let's see what each param indicates in the plugin.
+elem : The clickable element by clicking on which we will see the modal.
+header : The header title of the modal (HTML compatible.)
+mtype : This is the type of modal you want to show. There are 4 types of themes available in the modal. Those are 1)default 2)success 3)warning 4)error. The themes name are incase sensitive. (keep it small).
+background: The background of the cover which appears on the back of the modal. (rgb() compatible.).
+bg_opacity: The opacity of the provided background. (Range from 0 to 100).
+content: The content of the modal. (HTML compatible).
+closebtn : The button <strong>class</strong> (CSS CLASS) to close the modal.
+speed: The speed of showing and closing the modal.
+customheader: If you want custom header background. (optional param). (compatible with rgb()).</p>
+
+<h3>
+<a id="step-3-done-its-easy" class="anchor" href="#step-3-done-its-easy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 3: Done! Its Easy!</h3>
+
+<p>Liked it? or found a bug!! Tell me ;) </p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/abhibagul/SimpleModalPlugin">Simple Modal Plugin</a> is maintained by <a href="https://github.com/abhibagul">abhibagul</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/abhibagul/Adex-Modal-Plugin">Adex Modal Plugin</a> is maintained by <a href="https://github.com/abhibagul">abhibagul</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
