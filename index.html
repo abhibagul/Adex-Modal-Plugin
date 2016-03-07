@@ -22,7 +22,7 @@
       <h2>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
 
-<p>Tired of those fat! tedious!! and useless!!! scripts. Here <strong>ADEX MODAL Plugin</strong> has come to help you. We have reduced its size upto <strong>4KB!!</strong>. Not even that we have also tried to make it more easy to use. No need to access the html! Plugins are created to reduce the work. The plugin just requires you to provide jQuery from which it will automatically generate the HTML, css and jquery scripts for the related modals. All you need to do is just provide a element. A click on this element will show up the modal? Sounds hard?? It's Easy lets see how.<br><br><br><br></p>
+<p>Tired of those fat! tedious!! and useless!!! scripts. Here <strong>ADEX MODAL Plugin</strong> has come to help you. We have reduced its size upto <strong>4KB!!</strong>. Not even that we have also tried to make it more easy to use. No need to access the html! Plugins are created to reduce the work. The plugin just requires you to provide jQuery from which it will automatically generate the HTML, css and jquery scripts for the related modals. All you need to do is just provide a element. A click on this element will show up the modal? Sounds hard?? It's Easy lets see how.</p>
 
 <h2>
 <a id="use-it-in-3-steps" class="anchor" href="#use-it-in-3-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Use it in 3 Steps!</h2>
@@ -32,17 +32,17 @@
 
 <p>First of all we need to attach the resources file. The resources file the plugin requires is just a Jquery.js and adexmodal.js or adexmodal.min.js . Just attach both the plugins to the page.<br><br></p>
 
-<p><code>&lt;script type="text/javascript"  src="../jquery.min.js"&gt;&lt;/script&gt;</code><br>
-`</p>
+<p><code>&lt;script type="text/javascript"  src="../jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../adexmodal.js"&gt;&lt;/script&gt;</code></p>
 
 <p><strong>Note:</strong> Make sure jQuery is on top.<br><br></p>
 
 <h3>
 <a id="step-2--haha-it-works-put-jquery-code-to-apply-the-modal" class="anchor" href="#step-2--haha-it-works-put-jquery-code-to-apply-the-modal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 2 : HAHA It WORKS! (Put jquery code to apply the modal)</h3>
 
-<p>Now we have applied the jQuery and adexmodal to the page. Now we need to tell the plugin that when to display modal. That is which element shall user click to display the modal. Look on the following code i will explain each of the term.<br><br><br></p>
+<p>Now we have applied the jQuery and adexmodal to the page. Now we need to tell the plugin that when to display modal. That is which element shall user click to display the modal. Look on the following code i will explain each of the term.<br></p>
 
-<pre><code> &lt;pre &gt; $('elem').adexmodal({
+<pre><code>  $('elem').adexmodal({
     header : 'something',
     mtype :'default',
     background : '#000',
@@ -51,10 +51,10 @@
     closebtn : 'close',
     speed: 800,
     customheader: 'purple'
-    });&lt;/ pre&gt;
+    });
 </code></pre>
 
-<p><br><br><br>
+<p><br>
 That's the whole code you need to create the modal. Let's see what each param indicates in the plugin.<br><br>
 elem : The clickable element by clicking on which we will see the modal.<br><br>
 header : The header title of the modal (HTML compatible.)<br><br>
